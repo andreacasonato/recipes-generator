@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="header">
+            <div class="logo">
                 <img src="Images/Recipesgenerator-logo.svg" alt="Logo">
             </div>
-            <div>
-                <a href="#Categories">Categories<img src="Icons/menu-arrow-icon.svg" alt="menu arrow icon down"></a>
-                <button>Generate random recipe<img src="Icons/button-arrow-icon.svg" alt="button arrow icon"></button>
+            <div class="navigation">
+                <a class="menu-item" href="#">Categories<img src="Icons/menu-arrow-icon.svg" alt="menu arrow icon down"></a>
+                <button class="call-to-action">Generate random recipe<img src="Icons/button-arrow-icon.svg" alt="button arrow icon"></button>
             </div>
         </nav>
     </header>
     <main>
         <section class="main-section">
+            <div class="prep">
             <div>
-                <h1>Baked Salmon with Lemon & Dill</h1>
+                <h1>Baked Salmon with<br> Lemon & Dill</h1>
                 <div class="tags">
-                    <span><img src="Icons/medium-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon">Medium</span>
-                    <span><img src="Icons/time-icon.svg" alt="">25 minutes</span>
+                    <span class="difficulty-tag"><img src="Icons/medium-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon">Medium</span>
+                    <span class="time-tag"><img src="Icons/time-icon.svg" alt="">25 minutes</span>
                 </div>
                 <p>A healthy, protein-rich dinner with tender salmon baked in zesty lemon and fresh dill.</p>
             </div>
@@ -41,7 +46,7 @@
                 <div class="preparation">
                     <h2>Preparation</h2>
                     <ol>
-                        <li>Preheat oven to 200°C (390°F).</li>
+                        <li>Prehexat oven to 200°C (390°F).</li>
                         <li>Place salmon on a baking sheet lined with parchment.</li>
                         <li>Drizzle with olive oil, season with salt and pepper.</li>
                         <li>Top with lemon slices and dill.</li>
@@ -49,10 +54,64 @@
                     </ol>
                 </div>
             </div>
+        </div>
             <aside>
-                <img src="" alt="">
+                <img src="Images/salmon-recipe.webp" alt="Salmon recipe" width="496px" height="511px">
             </aside>
         </section>
     </main>
+    <hr>
+    <section>
+        <h3>Enjoy this recipe? You might also like...</h3>
+        <div class="recommended">
+    <a href="#">
+        <div>
+            <div class="recipe-card">
+                <div><img src="Images/pancakes-recipe.webp" alt="Banana pancakes" width="160px" height="160px"></div>
+                <div>
+                    <h4>Classic Banana Pancakes</h4>
+                    <div class="tags">
+                        <span class="difficulty-tag"><img src="Icons/easy-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon">Easy</span>
+                        <span class="time-tag"><img src="Icons/time-icon.svg" alt="">15 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+        <div>
+            <div class="recipe-card">
+                <div><img src="Images/chickpeas-recipe.webp" alt="Checkpeas stew" width="160px" height="160px"></div>
+                <div>
+                    <h4>Spicy Chickpea Stew</h4>
+                    <div class="tags">
+                        <span class="difficulty-tag"><img src="Icons/medium-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon" >Medium</span>
+                        <span class="time-tag"><img src="Icons/time-icon.svg" alt="">30 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="recipe-card">
+                <div><img src="Images/chicken-recipe.webp" alt="Butter chicken and veggies" width="160px" height="160px"></div>
+                <div class="recipe-card-description">
+                    <h4>One-Pan Garlic Butter Chicken & Veggies</h4>
+                    <div class="tags">
+                        <span class="difficulty-tag"><img src="Icons/easy-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon">Easy</span>
+                        <span class="time-tag"><img src="Icons/time-icon.svg" alt="">25 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div>&#169; Recipegenerator.io</div>
+                <div>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

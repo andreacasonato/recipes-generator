@@ -1,0 +1,125 @@
+/* BASE STYLES AND RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #606060;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1220px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 3.815rem;
+    font-weight: 700;
+    color: #D50024;
+}
+
+h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.953rem;
+    font-weight: 700;
+    color: #404040;
+}
+
+h3 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.563rem;
+    font-weight: 600;
+    color: #D50024;
+}
+
+h4 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #404040;
+
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #606060;
+    font-weight: 400;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 80px;
+}
+
+.menu-item {
+    text-decoration: none;
+    align-items: center;
+}
+
+.call-to-action {
+    background: #A7001C;
+    color: #ffff;
+    padding: 16px 24px;
+    border-radius: 24px;
+    align-items: center;
+}
+
+/* MAIN SECTION */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-to {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.difficulty-tag {
+    background: #F2F2F2;
+    color: #292929;
+    padding: 8px 16px;
+    border-radius: 24px;
+}
+
+.time-tag {
+    color: #292929;
+    padding: 8px 16px;
+    border: #F2F2F2 solid 2px;
+    border-radius: 24px;
+}
+
+hr {
+    color: #E1E1E1;
+}
+
+/* RECOMMEDED SECTION */
+.recommended {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    color: #ffff;
+    display: flex;
+}
+
+.recipe-card-description {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
