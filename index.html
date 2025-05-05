@@ -6,8 +6,8 @@
     <title>Recipes generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,100 +16,113 @@
                 <img src="Images/Recipesgenerator-logo.svg" alt="Logo">
             </div>
             <div class="navigation">
-                <a class="menu-item" href="#">Categories<img src="Icons/menu-arrow-icon.svg" alt="menu arrow icon down"></a>
-                <button class="call-to-action">Generate random recipe<img src="Icons/button-arrow-icon.svg" alt="button arrow icon"></button>
+                <a class="menu-item" href="#">Categories <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></a>
+                <button class="call-to-action">Generate random recipe <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.16699 10H15.8337M15.8337 10L10.0003 4.16669M15.8337 10L10.0003 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></button>
             </div>
         </nav>
     </header>
     <main>
         <section class="main-section">
-            <div class="prep">
-            <div>
-                <h1>Baked Salmon with<br> Lemon & Dill</h1>
-                <div class="tags">
-                    <span class="difficulty-tag"><img src="Icons/medium-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon">Medium</span>
-                    <span class="time-tag"><img src="Icons/time-icon.svg" alt="">25 minutes</span>
+            <div class="recipe-content">
+                <div class="recipe-header">
+                    <h1>Baked Salmon with<br> Lemon & Dill</h1>
+                    <div class="tags">
+                        <span class="difficulty-tag">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.00004 2.66669L9.33337 5.33335L12.0001 5.73335L10.0001 7.80002L10.4667 10.6667L8.00004 9.26669L5.53337 10.6667L6.00004 7.80002L4.00004 5.73335L6.66671 5.33335L8.00004 2.66669Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Medium
+                        </span>
+                        <span class="time-tag">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.00004 4.00002V8.00002L10.6667 9.33335M14.6667 8.00002C14.6667 11.6819 11.6819 14.6667 8.00004 14.6667C4.31814 14.6667 1.33337 11.6819 1.33337 8.00002C1.33337 4.31812 4.31814 1.33335 8.00004 1.33335C11.6819 1.33335 14.6667 4.31812 14.6667 8.00002Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            25 minutes
+                        </span>
+                    </div>
+                    <p>A healthy, protein-rich dinner with tender salmon baked in zesty lemon and fresh dill.</p>
+                
+                    <div class="how-to">
+                        <div class="ingredients">
+                            <h2>Ingredients</h2>
+                            <ul>
+                                <li>2 salmon fillets</li>
+                                <li>1 lemon, sliced</li>
+                                <li>2 tbsp fresh dill, chopped</li>
+                                <li>1 tbsp olive oil</li>
+                                <li>Salt & pepper</li>
+                            </ul>
+                        </div>
+                        <div class="preparation">
+                            <h2>Preparation</h2>
+                            <ol>
+                                <li>Preheat oven to 200°C (390°F).</li>
+                                <li>Place salmon on a baking sheet lined with parchment.</li>
+                                <li>Drizzle with olive oil, season with salt and pepper.</li>
+                                <li>Top with lemon slices and dill.</li>
+                                <li>Bake for 15–18 minutes or until cooked through.</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
-                <p>A healthy, protein-rich dinner with tender salmon baked in zesty lemon and fresh dill.</p>
             </div>
-            <div class="how-to">
-                <div class="ingredients">
-                    <h2>Ingredients</h2>
-                    <ul>
-                        <li>2 salmon fillets</li>
-                        <li>1 lemon, sliced</li>
-                        <li>2 tbsp fresh dill, chopped</li>
-                        <li>1 tbsp olive oil</li>
-                        <li>Salt & pepper</li>
-                    </ul>
-                </div>
-                <div class="preparation">
-                    <h2>Preparation</h2>
-                    <ol>
-                        <li>Prehexat oven to 200°C (390°F).</li>
-                        <li>Place salmon on a baking sheet lined with parchment.</li>
-                        <li>Drizzle with olive oil, season with salt and pepper.</li>
-                        <li>Top with lemon slices and dill.</li>
-                        <li>Bake for 15–18 minutes or until cooked through.</li>
-                    </ol>
-                </div>
+            <div class="recipe-image">
+                <img src="Images/salmon-recipe.webp" alt="Salmon recipe">
             </div>
-        </div>
-            <aside>
-                <img src="Images/salmon-recipe.webp" alt="Salmon recipe" width="496px" height="511px">
-            </aside>
         </section>
     </main>
     <hr>
-    <section>
+    <section class="recommendations-section">
         <h3>Enjoy this recipe? You might also like...</h3>
         <div class="recommended">
-    <a href="#">
-        <div>
             <div class="recipe-card">
-                <div><img src="Images/pancakes-recipe.webp" alt="Banana pancakes" width="160px" height="160px"></div>
-                <div>
+                <div class="recipe-image-container">
+                    <img src="Images/pancakes-recipe.webp" alt="Banana pancakes">
+                </div>
+                <div class="recipe-details">
                     <h4>Classic Banana Pancakes</h4>
                     <div class="tags">
-                        <span class="difficulty-tag"><img src="Icons/easy-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon">Easy</span>
-                        <span class="time-tag"><img src="Icons/time-icon.svg" alt="">15 minutes</span>
+                        <span class="difficulty-tag easy">Easy</span>
+                        <span class="time-tag">15 minutes</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </a>
-        <div>
             <div class="recipe-card">
-                <div><img src="Images/chickpeas-recipe.webp" alt="Checkpeas stew" width="160px" height="160px"></div>
-                <div>
+                <div class="recipe-image-container">
+                    <img src="Images/chickpeas-recipe.webp" alt="Chickpea stew">
+                </div>
+                <div class="recipe-details">
                     <h4>Spicy Chickpea Stew</h4>
                     <div class="tags">
-                        <span class="difficulty-tag"><img src="Icons/medium-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon" >Medium</span>
-                        <span class="time-tag"><img src="Icons/time-icon.svg" alt="">30 minutes</span>
+                        <span class="difficulty-tag">Medium</span>
+                        <span class="time-tag">30 minutes</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div>
             <div class="recipe-card">
-                <div><img src="Images/chicken-recipe.webp" alt="Butter chicken and veggies" width="160px" height="160px"></div>
-                <div class="recipe-card-description">
+                <div class="recipe-image-container">
+                    <img src="Images/chicken-recipe.webp" alt="Butter chicken and veggies">
+                </div>
+                <div class="recipe-details">
                     <h4>One-Pan Garlic Butter Chicken & Veggies</h4>
                     <div class="tags">
-                        <span class="difficulty-tag"><img src="Icons/easy-difficulty-rating-icon.svg" alt="medium-difficulty-rating-icon">Easy</span>
-                        <span class="time-tag"><img src="Icons/time-icon.svg" alt="">25 minutes</span>
+                        <span class="difficulty-tag easy">Easy</span>
+                        <span class="time-tag">25 minutes</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
     <footer>
         <div class="footer">
-            <div>&#169; Recipegenerator.io</div>
-                <div>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
+            <div>© Recipegenerator.io</div>
+            <div class="footer-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
             </div>
         </div>
     </footer>
