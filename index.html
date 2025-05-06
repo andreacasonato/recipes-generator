@@ -3,44 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes generator</title>
+    <title>Recipes Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Public+Sans:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="header">
             <div class="logo">
-                <img src="Images/Recipesgenerator-logo.svg" alt="Logo">
+                <img src="Images/Recipesgenerator-logo.svg" alt="Recipes Generator Logo">
             </div>
             <div class="navigation">
-                <a class="menu-item" href="#">Categories <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></a>
-                <button class="call-to-action">Generate random recipe <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.16699 10H15.8337M15.8337 10L10.0003 4.16669M15.8337 10L10.0003 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></button>
+                <a class="menu-item" href="#">Categories<img src="Icons/menu-arrow-icon.svg" alt="Menu arrow"></a>
+                <button class="call-to-action">Generate random recipe<img src="Icons/button-arrow-icon.svg" alt="Button arrow"></button>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
+    
     <main>
         <section class="main-section">
             <div class="recipe-content">
                 <div class="recipe-header">
-                    <h1>Baked Salmon with<br> Lemon & Dill</h1>
+                    <h1>Baked Salmon with Lemon & Dill</h1>
                     <div class="tags">
                         <span class="difficulty-tag">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.00004 2.66669L9.33337 5.33335L12.0001 5.73335L10.0001 7.80002L10.4667 10.6667L8.00004 9.26669L5.53337 10.6667L6.00004 7.80002L4.00004 5.73335L6.66671 5.33335L8.00004 2.66669Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <img src="Icons/medium-difficulty-rating-icon.svg" alt="Medium difficulty">
                             Medium
                         </span>
                         <span class="time-tag">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.00004 4.00002V8.00002L10.6667 9.33335M14.6667 8.00002C14.6667 11.6819 11.6819 14.6667 8.00004 14.6667C4.31814 14.6667 1.33337 11.6819 1.33337 8.00002C1.33337 4.31812 4.31814 1.33335 8.00004 1.33335C11.6819 1.33335 14.6667 4.31812 14.6667 8.00002Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <img src="Icons/time-icon.svg" alt="Time">
                             25 minutes
                         </span>
                     </div>
@@ -71,11 +69,13 @@
                 </div>
             </div>
             <div class="recipe-image">
-                <img src="Images/salmon-recipe.webp" alt="Salmon recipe">
+                <img src="Images/salmon-recipe.webp" alt="Baked Salmon with Lemon & Dill">
             </div>
         </section>
     </main>
+    
     <hr>
+    
     <section class="recommendations-section">
         <h3>Enjoy this recipe? You might also like...</h3>
         <div class="recommended">
@@ -86,8 +86,14 @@
                 <div class="recipe-details">
                     <h4>Classic Banana Pancakes</h4>
                     <div class="tags">
-                        <span class="difficulty-tag easy">Easy</span>
-                        <span class="time-tag">15 minutes</span>
+                        <span class="difficulty-tag">
+                            <img src="Icons/easy-difficulty-rating-icon.svg" alt="Easy difficulty">
+                            Easy
+                        </span>
+                        <span class="time-tag">
+                            <img src="Icons/time-icon.svg" alt="Time">
+                            15 minutes
+                        </span>
                     </div>
                 </div>
             </div>
@@ -98,8 +104,14 @@
                 <div class="recipe-details">
                     <h4>Spicy Chickpea Stew</h4>
                     <div class="tags">
-                        <span class="difficulty-tag">Medium</span>
-                        <span class="time-tag">30 minutes</span>
+                        <span class="difficulty-tag">
+                            <img src="Icons/medium-difficulty-rating-icon.svg" alt="Medium difficulty">
+                            Medium
+                        </span>
+                        <span class="time-tag">
+                            <img src="Icons/time-icon.svg" alt="Time">
+                            30 minutes
+                        </span>
                     </div>
                 </div>
             </div>
@@ -108,15 +120,22 @@
                     <img src="Images/chicken-recipe.webp" alt="Butter chicken and veggies">
                 </div>
                 <div class="recipe-details">
-                    <h4>One-Pan Garlic Butter Chicken & Veggies</h4>
+                    <h4>Garlic Butter Chicken & Veggies</h4>
                     <div class="tags">
-                        <span class="difficulty-tag easy">Easy</span>
-                        <span class="time-tag">25 minutes</span>
+                        <span class="difficulty-tag">
+                            <img src="Icons/easy-difficulty-rating-icon.svg" alt="Easy difficulty">
+                            Easy
+                        </span>
+                        <span class="time-tag">
+                            <img src="Icons/time-icon.svg" alt="Time">
+                            25 minutes
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <footer>
         <div class="footer">
             <div>© Recipegenerator.io</div>
