@@ -1,4 +1,4 @@
-#Recipe Generator
+# Recipe Generator
 
 A simple and fun recipe generator that suggests random meal ideas.
 
