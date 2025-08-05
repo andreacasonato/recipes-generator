@@ -1,8 +1,16 @@
 /* BASE STYLES AND RESET */
-* {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+* {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
 :root {
@@ -23,7 +31,10 @@ body {
 }
 
 /* TYPOGRAPHY */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Public Sans', sans-serif;
     font-weight: 700;
     color: var(--text-dark);
@@ -61,7 +72,8 @@ p {
     max-width: 520px;
 }
 
-ul, ol {
+ul,
+ol {
     margin-left: 24px;
     line-height: 1.6;
 }
@@ -168,7 +180,8 @@ img {
     flex-wrap: wrap;
 }
 
-.difficulty-tag, .time-tag {
+.difficulty-tag,
+.time-tag {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -193,7 +206,8 @@ img {
     margin-top: 16px;
 }
 
-.ingredients, .preparation {
+.ingredients,
+.preparation {
     flex: 1;
 }
 
@@ -264,7 +278,7 @@ hr {
     margin-bottom: 0;
 }
 
-.recipe-details .difficulty-tag, 
+.recipe-details .difficulty-tag,
 .recipe-details .time-tag {
     font-size: 0.8rem;
     padding: 4px 10px;
@@ -300,11 +314,11 @@ hr {
     h1 {
         font-size: 3rem;
     }
-    
+
     .main-section {
         gap: 30px;
     }
-    
+
     .recipe-image {
         min-width: 250px;
     }
@@ -314,7 +328,7 @@ hr {
     .recipe-card {
         min-width: 220px;
     }
-    
+
     .how-to {
         flex-direction: column;
         gap: 24px;
@@ -325,42 +339,42 @@ hr {
     h1 {
         font-size: 2.5rem;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
     h3 {
         font-size: 1.3rem;
     }
-    
+
     .main-section {
         flex-direction: column-reverse;
     }
-    
+
     .recipe-image {
         max-width: 100%;
         min-width: 100%;
     }
-    
+
     .recipe-image img {
         max-height: 400px;
         width: 100%;
     }
-    
+
     .recommended {
         flex-direction: column;
     }
-    
+
     .recipe-card {
         min-width: 100%;
     }
-    
+
     /* Show mobile menu toggle */
     .mobile-menu-toggle {
         display: block;
     }
-    
+
     /* Hide desktop navigation */
     .navigation {
         position: fixed;
@@ -378,12 +392,12 @@ hr {
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         z-index: 5;
     }
-    
+
     /* Add active class for when mobile menu is open */
     .navigation.active {
         right: 0;
     }
-    
+
     .menu-item {
         padding: 12px 0;
     }
@@ -393,17 +407,17 @@ hr {
     h1 {
         font-size: 2rem;
     }
-    
+
     body {
         padding: 0 15px;
     }
-    
+
     .footer {
         flex-direction: column;
         gap: 16px;
         align-items: flex-start;
     }
-    
+
     .recipe-image-container {
         height: 180px;
     }
